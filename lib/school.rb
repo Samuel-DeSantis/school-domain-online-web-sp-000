@@ -9,8 +9,12 @@ class School
   def add_student(name, grade)
     @name = name
     @grade = grade
-    roster[@grade] = []
-    roster[@grade] << @name
+
+    if roster.has_key?(@grade)
+      roster[@grade] << @name
+    else
+      roster[@grade] = []
+    end
   end
 
   def grade
