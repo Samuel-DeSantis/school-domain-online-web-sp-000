@@ -1,9 +1,9 @@
 class School
-  roster = []
+
 
   def initialized(school)
     @school = name
-
+    roster = {}
   end
 
   def add_student
