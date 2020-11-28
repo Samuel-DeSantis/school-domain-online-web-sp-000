@@ -1,19 +1,15 @@
 class School
-  def initialize(name)
-    @name = name
-    roster = {}
+  @@roster = []
+
+  def initialized
   end
-  def add_student(student, grade)
-    @student = student
-    @grade = grade
-    roster[@grade] = []
-    roster[@grade] << @student
+
+  def add_student
   end
-  def grade(grade)
-    @grade = grade
-    roster[@grade]
+
+  def grade
   end
-  def sort
-    roster.sort
+
+  def sorted
   end
 end
