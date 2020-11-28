@@ -8,4 +8,8 @@ class School
 
   def add_student(name, grade)
   end
+
+  def roster
+    roster
+  end
 end
